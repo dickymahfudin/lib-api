@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import { IRouter } from '../interface/IRouter';
 
-abstract class BaseRouter implements IRouter {
+export abstract class BaseRouter implements IRouter {
   public router: Router;
 
   constructor() {
@@ -11,5 +11,3 @@ abstract class BaseRouter implements IRouter {
 
   abstract routes(): void;
 }
-
-export default BaseRouter;
