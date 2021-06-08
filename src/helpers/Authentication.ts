@@ -20,7 +20,6 @@ export class Authentication {
 
   public static generateTokenRaspi = async <T>(user: T): Promise<string> => {
     const secretKey: string = process.env.JWT_SECRET_KEY || 'dism';
-    const expiresIn: string = process.env.JWT_EXPIRES || '1m';
     const token: string = jwt.sign({ user }, secretKey);
     return token;
   };

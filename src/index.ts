@@ -1,6 +1,6 @@
 export * from './helpers/Authentication';
 
-export * from './middlewares/AuthMiddleware';
+export * from './middlewares/requireAuth';
 export * from './middlewares/responseHandler';
 
 export * from './response/errors';

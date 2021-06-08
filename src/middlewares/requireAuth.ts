@@ -2,7 +2,7 @@ import { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
 import { ResponseError } from '../response/errors';
 
-export const auth = (req: Request, res: Response, next: NextFunction): any => {
+export const requireAuth = (req: Request, res: Response, next: NextFunction): any => {
   if (!req.headers.authorization) {
     return next(new ResponseError.UnauthorizedError());
   }
