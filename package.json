@@ -1,6 +1,6 @@
 {
   "name": "@dism13/lib-api",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "common helper middlewares, response",
   "main": "./build/index.js",
   "files": [
